@@ -1,0 +1,19 @@
+@import "@/styles/global/mixins";
+
+.button {
+  background: #ECFE3F;
+  border-radius: 22px;
+
+  @include spacer(padding, x, 3 / 4);
+  @include spacer(padding, y, 10 / 16);
+  color: #0F0F0F;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: lowercase;
+  
+}

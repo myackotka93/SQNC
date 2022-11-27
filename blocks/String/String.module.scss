@@ -1,0 +1,31 @@
+@import "@/styles/global/mixins";
+
+.infinite {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.infinite {
+  .String {
+    display: flex;
+    width: 190%;
+    animation: marquee-infinite 9s linear infinite;
+    @include spacer(padding, y, 10 / 16)
+  }
+
+  .text {
+    white-space: nowrap;
+    width: 100%;
+    color: #ECFE3F;
+    text-transform: uppercase;
+  }
+}
+
+@keyframes marquee-infinite {
+  0% {
+      transform: translateX(-50%);
+  }
+  100% {
+      transform: translateX(0%);
+  }
+}
