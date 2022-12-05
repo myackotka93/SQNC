@@ -2,10 +2,9 @@
 
 .button {
   background: #ECFE3F;
-  border-radius: 22px;
-
+  border-radius: 12px;
   @include spacer(padding, x, 3 / 4);
-  @include spacer(padding, y, 10 / 16);
+  @include spacer(padding, y,  1 / 2);
   color: #0F0F0F;
   display: flex;
   justify-content: center;
@@ -15,5 +14,12 @@
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: lowercase;
+  z-index: 1001;
   
+
+  &:hover {
+    background: transparent;
+    border: 1px solid #ECFE3F;
+    color: #ECFE3F;
+  }
 }

@@ -5,7 +5,7 @@ import styles from './Button.module.scss';
 import HtmlParser from 'html-react-parser';
 import typograf from '@/utils/typograf';
 
-function Button({ text="скачать презентацию.pdf" }) {
+function Button({ text="посмотреть презентацию.pdf" }) {
   return (
     <>
       <button className={styles.button}>
