@@ -5,6 +5,8 @@ import typograf, { parser } from '@/utils/typograf';
 import Button from '@/components/Button/Button';
 import String from '@/blocks/String/String';
 import styles from './index.module.scss';
+import Noise from '@/blocks/Noise/Noise';
+import OrbScene from '@/components/OrbScene/OrbScene';
 
 export default function Home() {
 
@@ -24,8 +26,11 @@ export default function Home() {
 
   return (
     <>
+      
       <div className={styles.body}>
         <div className={styles.background}>
+          {/* <OrbScene /> */}
+          <Noise />
           <String />
           <div className={styles.wrapper}>
             <div className={styles.video_container}>

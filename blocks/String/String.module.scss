@@ -9,23 +9,25 @@
   .String {
     display: flex;
     width: 190%;
-    animation: marquee-infinite 9s linear infinite;
-    @include spacer(padding, y, 10 / 16)
+    @include spacer(padding, y, 1 / 2)
   }
 
   .text {
     white-space: nowrap;
-    width: 100%;
     color: #ECFE3F;
     text-transform: uppercase;
   }
 }
 
+.mounted .text {
+  animation: marquee-infinite 50s linear infinite;
+}
+
 @keyframes marquee-infinite {
   0% {
-      transform: translateX(-50%);
+      transform: translateX(0%);
   }
   100% {
-      transform: translateX(0%);
+      transform: translateX(-100%);
   }
 }

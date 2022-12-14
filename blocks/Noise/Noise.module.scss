@@ -1,0 +1,32 @@
+@import '@/styles/global/mixins';
+
+.Noise {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 0;
+  opacity: 0.09;
+  background-image: url('/images/noise/noise-1.png');
+  background-size: 300px 300px;
+}
+
+.mounted {
+  animation: noise-animation 0.25s linear infinite;
+}
+
+@keyframes noise-animation {
+  0%,
+  100% {
+    background-image: url('/images/noise/noise-1.png');
+  }
+  25% {
+    background-image: url('/images/noise/noise-2.png');
+  }
+  50% {
+    background-image: url('/images/noise/noise-3.png');
+  }
+  75% {
+    background-image: url('/images/noise/noise-4.png');
+  }
+}
+
